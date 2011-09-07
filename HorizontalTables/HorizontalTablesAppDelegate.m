@@ -11,6 +11,7 @@
 @implementation HorizontalTablesAppDelegate
 
 @synthesize window = _window;
+@synthesize navigationController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -61,6 +62,7 @@
 - (void)dealloc
 {
     [_window release];
+    [navigationController release];
     [super dealloc];
 }
 

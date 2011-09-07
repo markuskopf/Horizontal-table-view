@@ -52,6 +52,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75577C59141789B3002F8A01 /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				7569F95B14178271005CDC42 /* MainWindow_iPhone.xib */,
+			);
+			name = NIBs;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		75577C5B141789D6002F8A01 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		75577C5C141789EC002F8A01 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		75577C5D141789F9002F8A01 /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				7569F96214178271005CDC42 /* MainWindow_iPad.xib */,
+			);
+			name = NIBs;
+			sourceTree = "<group>";
+		};
 		7569F93614178270005CDC42 = {
 			isa = PBXGroup;
 			children = (
@@ -105,9 +136,10 @@
 		7569F95714178271005CDC42 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				75577C5B141789D6002F8A01 /* Images */,
+				75577C59141789B3002F8A01 /* NIBs */,
 				7569F95814178271005CDC42 /* HorizontalTablesAppDelegate_iPhone.h */,
 				7569F95914178271005CDC42 /* HorizontalTablesAppDelegate_iPhone.m */,
-				7569F95B14178271005CDC42 /* MainWindow_iPhone.xib */,
 			);
 			name = iPhone;
 			sourceTree = "<group>";
@@ -115,9 +147,10 @@
 		7569F95E14178271005CDC42 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				75577C5D141789F9002F8A01 /* NIBs */,
+				75577C5C141789EC002F8A01 /* Images */,
 				7569F95F14178271005CDC42 /* HorizontalTablesAppDelegate_iPad.h */,
 				7569F96014178271005CDC42 /* HorizontalTablesAppDelegate_iPad.m */,
-				7569F96214178271005CDC42 /* MainWindow_iPad.xib */,
 			);
 			name = iPad;
 			sourceTree = "<group>";
@@ -209,6 +242,7 @@
 				7569F95C14178271005CDC42 /* en */,
 			);
 			name = MainWindow_iPhone.xib;
+			path = HorizontalTables;
 			sourceTree = "<group>";
 		};
 		7569F96214178271005CDC42 /* MainWindow_iPad.xib */ = {
@@ -308,6 +342,7 @@
 				7569F96914178271005CDC42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
