@@ -24,16 +24,16 @@
 		7569F94514178271005CDC42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7569F94714178271005CDC42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7569F94914178271005CDC42 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7569F94D14178271005CDC42 /* HorizontalTables-Info.plist */ = {isa = PBXFileReference; path = "HorizontalTables-Info.plist"; sourceTree = "<group>"; };
+		7569F94D14178271005CDC42 /* HorizontalTables-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HorizontalTables-Info.plist"; sourceTree = "<group>"; };
 		7569F94F14178271005CDC42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7569F95114178271005CDC42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7569F95314178271005CDC42 /* HorizontalTables-Prefix.pch */ = {isa = PBXFileReference; path = "HorizontalTables-Prefix.pch"; sourceTree = "<group>"; };
-		7569F95414178271005CDC42 /* HorizontalTablesAppDelegate.h */ = {isa = PBXFileReference; path = HorizontalTablesAppDelegate.h; sourceTree = "<group>"; };
+		7569F95314178271005CDC42 /* HorizontalTables-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HorizontalTables-Prefix.pch"; sourceTree = "<group>"; };
+		7569F95414178271005CDC42 /* HorizontalTablesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalTablesAppDelegate.h; sourceTree = "<group>"; };
 		7569F95514178271005CDC42 /* HorizontalTablesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalTablesAppDelegate.m; sourceTree = "<group>"; };
-		7569F95814178271005CDC42 /* HorizontalTablesAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = HorizontalTablesAppDelegate_iPhone.h; path = iPhone/HorizontalTablesAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		7569F95814178271005CDC42 /* HorizontalTablesAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HorizontalTablesAppDelegate_iPhone.h; path = iPhone/HorizontalTablesAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		7569F95914178271005CDC42 /* HorizontalTablesAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HorizontalTablesAppDelegate_iPhone.m; path = iPhone/HorizontalTablesAppDelegate_iPhone.m; sourceTree = "<group>"; };
 		7569F95C14178271005CDC42 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		7569F95F14178271005CDC42 /* HorizontalTablesAppDelegate_iPad.h */ = {isa = PBXFileReference; name = HorizontalTablesAppDelegate_iPad.h; path = iPad/HorizontalTablesAppDelegate_iPad.h; sourceTree = "<group>"; };
+		7569F95F14178271005CDC42 /* HorizontalTablesAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HorizontalTablesAppDelegate_iPad.h; path = iPad/HorizontalTablesAppDelegate_iPad.h; sourceTree = "<group>"; };
 		7569F96014178271005CDC42 /* HorizontalTablesAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HorizontalTablesAppDelegate_iPad.m; path = iPad/HorizontalTablesAppDelegate_iPad.m; sourceTree = "<group>"; };
 		7569F96314178271005CDC42 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
