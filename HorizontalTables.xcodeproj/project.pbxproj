@@ -86,6 +86,8 @@
 		755FFD821418B1DA00BCFE76 /* NavBar~iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 755FFD7E1418B1DA00BCFE76 /* NavBar~iPad.png */; };
 		755FFD831418B1DA00BCFE76 /* NavBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 755FFD801418B1DA00BCFE76 /* NavBar.png */; };
 		755FFD841418B1DA00BCFE76 /* NavBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 755FFD811418B1DA00BCFE76 /* NavBar@2x.png */; };
+		755FFD881418C26300BCFE76 /* HorizontalTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 755FFD871418C26300BCFE76 /* HorizontalTableCell.m */; };
+		755FFD8F1418C6E000BCFE76 /* HorizontalTableCell_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 755FFD8E1418C6E000BCFE76 /* HorizontalTableCell_iPhone.m */; };
 		7569F94614178271005CDC42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7569F94514178271005CDC42 /* UIKit.framework */; };
 		7569F94814178271005CDC42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7569F94714178271005CDC42 /* Foundation.framework */; };
 		7569F94A14178271005CDC42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7569F94914178271005CDC42 /* CoreGraphics.framework */; };
@@ -181,6 +183,11 @@
 		755FFD7E1418B1DA00BCFE76 /* NavBar~iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBar~iPad.png"; sourceTree = "<group>"; };
 		755FFD801418B1DA00BCFE76 /* NavBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBar.png; sourceTree = "<group>"; };
 		755FFD811418B1DA00BCFE76 /* NavBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBar@2x.png"; sourceTree = "<group>"; };
+		755FFD861418C26300BCFE76 /* HorizontalTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalTableCell.h; sourceTree = "<group>"; };
+		755FFD871418C26300BCFE76 /* HorizontalTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalTableCell.m; sourceTree = "<group>"; };
+		755FFD8A1418C66B00BCFE76 /* ControlVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlVariables.h; sourceTree = "<group>"; };
+		755FFD8D1418C6E000BCFE76 /* HorizontalTableCell_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalTableCell_iPhone.h; sourceTree = "<group>"; };
+		755FFD8E1418C6E000BCFE76 /* HorizontalTableCell_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalTableCell_iPhone.m; sourceTree = "<group>"; };
 		7569F94114178271005CDC42 /* HorizontalTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorizontalTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7569F94514178271005CDC42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7569F94714178271005CDC42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -386,6 +393,39 @@
 			path = iPhone;
 			sourceTree = "<group>";
 		};
+		755FFD851418C1AE00BCFE76 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				755FFD861418C26300BCFE76 /* HorizontalTableCell.h */,
+				755FFD871418C26300BCFE76 /* HorizontalTableCell.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		755FFD891418C64700BCFE76 /* Utility Files */ = {
+			isa = PBXGroup;
+			children = (
+				755FFD8A1418C66B00BCFE76 /* ControlVariables.h */,
+			);
+			name = "Utility Files";
+			sourceTree = "<group>";
+		};
+		755FFD8B1418C69A00BCFE76 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				755FFD8D1418C6E000BCFE76 /* HorizontalTableCell_iPhone.h */,
+				755FFD8E1418C6E000BCFE76 /* HorizontalTableCell_iPhone.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		755FFD8C1418C6A200BCFE76 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		7569F93614178270005CDC42 = {
 			isa = PBXGroup;
 			children = (
@@ -416,6 +456,8 @@
 		7569F94B14178271005CDC42 /* HorizontalTables */ = {
 			isa = PBXGroup;
 			children = (
+				755FFD891418C64700BCFE76 /* Utility Files */,
+				755FFD851418C1AE00BCFE76 /* Classes */,
 				7569F95414178271005CDC42 /* HorizontalTablesAppDelegate.h */,
 				7569F95514178271005CDC42 /* HorizontalTablesAppDelegate.m */,
 				753AA2931418171E00040A6B /* View Controllers */,
@@ -441,6 +483,7 @@
 		7569F95714178271005CDC42 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				755FFD8B1418C69A00BCFE76 /* Classes */,
 				75577C5B141789D6002F8A01 /* Images */,
 				753AA2941418172C00040A6B /* View Controllers */,
 				75577C59141789B3002F8A01 /* NIBs */,
@@ -453,6 +496,7 @@
 		7569F95E14178271005CDC42 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				755FFD8C1418C6A200BCFE76 /* Classes */,
 				753AA2951418173800040A6B /* View Controllers */,
 				75577C5D141789F9002F8A01 /* NIBs */,
 				75577C5C141789EC002F8A01 /* Images */,
@@ -608,6 +652,8 @@
 				753AA2911418148200040A6B /* ArticleListViewController.m in Sources */,
 				753AA299141817E000040A6B /* ArticleListViewController_iPhone.m in Sources */,
 				755FFCEA1418A99100BCFE76 /* ArticleListViewController_iPad.m in Sources */,
+				755FFD881418C26300BCFE76 /* HorizontalTableCell.m in Sources */,
+				755FFD8F1418C6E000BCFE76 /* HorizontalTableCell_iPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
