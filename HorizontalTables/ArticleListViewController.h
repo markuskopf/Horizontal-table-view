@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ArticleListViewController : UITableViewController
+{
+    NSDictionary *_articleDictionary;
+}
+
+@property (nonatomic, retain) NSDictionary *articleDictionary;
 
 @end

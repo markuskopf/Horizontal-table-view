@@ -8,6 +8,18 @@
 
 #import "HorizontalTablesAppDelegate.h"
 
+@implementation UINavigationBar (UINavigationBarCustomDraw)
+
+- (void)drawRect:(CGRect)rect
+{
+    [[UIImage imageNamed:@"NavBar.png"] drawInRect:rect];
+    self.topItem.titleView = [[[UIView alloc] init] autorelease];
+    
+    self.tintColor = [UIColor colorWithRed:0.6745098 green:0.6745098 blue:0.6745098 alpha:1.0];
+}
+
+@end
+
 @implementation HorizontalTablesAppDelegate
 
 @synthesize window = _window;
