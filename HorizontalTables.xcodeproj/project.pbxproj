@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		753AA2911418148200040A6B /* ArticleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 753AA2901418148200040A6B /* ArticleListViewController.m */; };
+		753AA299141817E000040A6B /* ArticleListViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 753AA297141817E000040A6B /* ArticleListViewController_iPhone.m */; };
+		753AA29A141817E000040A6B /* ArticleListViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753AA298141817E000040A6B /* ArticleListViewController_iPhone.xib */; };
+		755FFCEA1418A99100BCFE76 /* ArticleListViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 755FFCE81418A99100BCFE76 /* ArticleListViewController_iPad.m */; };
+		755FFCEB1418A99100BCFE76 /* ArticleListViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 755FFCE91418A99100BCFE76 /* ArticleListViewController_iPad.xib */; };
 		7569F94614178271005CDC42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7569F94514178271005CDC42 /* UIKit.framework */; };
 		7569F94814178271005CDC42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7569F94714178271005CDC42 /* Foundation.framework */; };
 		7569F94A14178271005CDC42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7569F94914178271005CDC42 /* CoreGraphics.framework */; };
@@ -20,6 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		753AA28F1418148200040A6B /* ArticleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleListViewController.h; sourceTree = "<group>"; };
+		753AA2901418148200040A6B /* ArticleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleListViewController.m; sourceTree = "<group>"; };
+		753AA296141817E000040A6B /* ArticleListViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleListViewController_iPhone.h; sourceTree = "<group>"; };
+		753AA297141817E000040A6B /* ArticleListViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleListViewController_iPhone.m; sourceTree = "<group>"; };
+		753AA298141817E000040A6B /* ArticleListViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArticleListViewController_iPhone.xib; path = HorizontalTables/ArticleListViewController_iPhone.xib; sourceTree = "<group>"; };
+		755FFCE71418A99100BCFE76 /* ArticleListViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleListViewController_iPad.h; sourceTree = "<group>"; };
+		755FFCE81418A99100BCFE76 /* ArticleListViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleListViewController_iPad.m; sourceTree = "<group>"; };
+		755FFCE91418A99100BCFE76 /* ArticleListViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleListViewController_iPad.xib; sourceTree = "<group>"; };
 		7569F94114178271005CDC42 /* HorizontalTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorizontalTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7569F94514178271005CDC42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7569F94714178271005CDC42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,9 +65,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		753AA2931418171E00040A6B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				753AA28F1418148200040A6B /* ArticleListViewController.h */,
+				753AA2901418148200040A6B /* ArticleListViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		753AA2941418172C00040A6B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				753AA296141817E000040A6B /* ArticleListViewController_iPhone.h */,
+				753AA297141817E000040A6B /* ArticleListViewController_iPhone.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		753AA2951418173800040A6B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				755FFCE71418A99100BCFE76 /* ArticleListViewController_iPad.h */,
+				755FFCE81418A99100BCFE76 /* ArticleListViewController_iPad.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		75577C59141789B3002F8A01 /* NIBs */ = {
 			isa = PBXGroup;
 			children = (
+				753AA298141817E000040A6B /* ArticleListViewController_iPhone.xib */,
 				7569F95B14178271005CDC42 /* MainWindow_iPhone.xib */,
 			);
 			name = NIBs;
@@ -78,6 +119,7 @@
 		75577C5D141789F9002F8A01 /* NIBs */ = {
 			isa = PBXGroup;
 			children = (
+				755FFCE91418A99100BCFE76 /* ArticleListViewController_iPad.xib */,
 				7569F96214178271005CDC42 /* MainWindow_iPad.xib */,
 			);
 			name = NIBs;
@@ -115,6 +157,7 @@
 			children = (
 				7569F95414178271005CDC42 /* HorizontalTablesAppDelegate.h */,
 				7569F95514178271005CDC42 /* HorizontalTablesAppDelegate.m */,
+				753AA2931418171E00040A6B /* View Controllers */,
 				7569F95714178271005CDC42 /* iPhone */,
 				7569F95E14178271005CDC42 /* iPad */,
 				7569F94C14178271005CDC42 /* Supporting Files */,
@@ -137,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				75577C5B141789D6002F8A01 /* Images */,
+				753AA2941418172C00040A6B /* View Controllers */,
 				75577C59141789B3002F8A01 /* NIBs */,
 				7569F95814178271005CDC42 /* HorizontalTablesAppDelegate_iPhone.h */,
 				7569F95914178271005CDC42 /* HorizontalTablesAppDelegate_iPhone.m */,
@@ -147,6 +191,7 @@
 		7569F95E14178271005CDC42 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				753AA2951418173800040A6B /* View Controllers */,
 				75577C5D141789F9002F8A01 /* NIBs */,
 				75577C5C141789EC002F8A01 /* Images */,
 				7569F95F14178271005CDC42 /* HorizontalTablesAppDelegate_iPad.h */,
@@ -208,6 +253,8 @@
 				7569F95014178271005CDC42 /* InfoPlist.strings in Resources */,
 				7569F95D14178271005CDC42 /* MainWindow_iPhone.xib in Resources */,
 				7569F96414178271005CDC42 /* MainWindow_iPad.xib in Resources */,
+				753AA29A141817E000040A6B /* ArticleListViewController_iPhone.xib in Resources */,
+				755FFCEB1418A99100BCFE76 /* ArticleListViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +269,9 @@
 				7569F95614178271005CDC42 /* HorizontalTablesAppDelegate.m in Sources */,
 				7569F95A14178271005CDC42 /* HorizontalTablesAppDelegate_iPhone.m in Sources */,
 				7569F96114178271005CDC42 /* HorizontalTablesAppDelegate_iPad.m in Sources */,
+				753AA2911418148200040A6B /* ArticleListViewController.m in Sources */,
+				753AA299141817E000040A6B /* ArticleListViewController_iPhone.m in Sources */,
+				755FFCEA1418A99100BCFE76 /* ArticleListViewController_iPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
