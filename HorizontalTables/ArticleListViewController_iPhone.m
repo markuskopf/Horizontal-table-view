@@ -7,6 +7,8 @@
 //
 
 #import "ArticleListViewController_iPhone.h"
+#import "ControlVariables.h"
+#import "HorizontalTableCell_iPhone.h"
 
 #define kHeadlineSectionHeight  26
 #define kRegularSectionHeight   18
@@ -19,6 +21,12 @@
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.
+}
+
+- (void)awakeFromNib
+{
+    [self.tableView setBackgroundColor:kVerticalTableBackgroundColor];
+    self.tableView.rowHeight = kCellHeight + (kRowVerticalPadding * 0.5) + ((kRowVerticalPadding * 0.5) * 0.5);
 }
 
 
@@ -71,27 +79,24 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if (cell == nil) 
+    static NSString *CellIdentifier = @"HorizontalCell";
+        
+    HorizontalTableCell_iPhone *cell = (HorizontalTableCell_iPhone *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
+    if (cell == nil)
     {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+      cell = [[[HorizontalTableCell_iPhone alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, tableView.frame.size.height)] autorelease];
     }
-    
+        
     NSSortDescriptor* sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:nil ascending:YES selector:@selector(localizedCompare:)];
     NSArray* sortedCategories = [self.articleDictionary.allKeys sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
-    
+        
     NSString *categoryName = [sortedCategories objectAtIndex:indexPath.section];
-    
+        
     NSArray *currentCategory = [self.articleDictionary objectForKey:categoryName];
-    
-    NSDictionary *currentArticle = [currentCategory objectAtIndex:indexPath.row];
-    
-    cell.textLabel.text = [currentArticle objectForKey:@"Title"];
-    cell.imageView.image = [UIImage imageNamed:[currentArticle objectForKey:@"ImageName"]];
-    
+        
+    cell.articles = currentCategory;
+        
     return cell;
 }
 

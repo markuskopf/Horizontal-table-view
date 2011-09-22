@@ -8,6 +8,8 @@
 
 #import "HorizontalTableCell_iPhone.h"
 #import "ControlVariables.h"
+#import "ArticleCell_iPhone.h"
+#import "ArticleTitleLabel.h"
 
 @implementation HorizontalTableCell_iPhone
 
@@ -38,6 +40,25 @@
     }
     
     return self;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"ArticleCell";
+    
+    ArticleCell_iPhone *cell = (ArticleCell_iPhone *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell == nil) 
+    {
+        cell = [[[ArticleCell_iPhone alloc] initWithFrame:CGRectMake(0, 0, kCellWidth, kCellHeight)] autorelease];
+    }
+    
+	NSDictionary *currentArticle = [self.articles objectAtIndex:indexPath.row];
+    
+    cell.thumbnail.image = [UIImage imageNamed:[currentArticle objectForKey:@"ImageName"]];
+    cell.titleLabel.text = [currentArticle objectForKey:@"Title"];
+    
+    return cell;
 }
 
 @end

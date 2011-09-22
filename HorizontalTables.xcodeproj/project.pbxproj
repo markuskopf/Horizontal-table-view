@@ -98,6 +98,10 @@
 		7569F95D14178271005CDC42 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7569F95B14178271005CDC42 /* MainWindow_iPhone.xib */; };
 		7569F96114178271005CDC42 /* HorizontalTablesAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 7569F96014178271005CDC42 /* HorizontalTablesAppDelegate_iPad.m */; };
 		7569F96414178271005CDC42 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7569F96214178271005CDC42 /* MainWindow_iPad.xib */; };
+		757CE3C4142B74AC006606F4 /* ArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 757CE3C3142B74AC006606F4 /* ArticleCell.m */; };
+		757CE3C8142B77D2006606F4 /* ArticleCell_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 757CE3C7142B77D2006606F4 /* ArticleCell_iPhone.m */; };
+		757CE3CB142B7820006606F4 /* ArticleCell_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 757CE3CA142B7820006606F4 /* ArticleCell_iPad.m */; };
+		75CC7D8A142B8E1400210942 /* ArticleTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CC7D89142B8E1400210942 /* ArticleTitleLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,6 +208,14 @@
 		7569F95F14178271005CDC42 /* HorizontalTablesAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HorizontalTablesAppDelegate_iPad.h; path = iPad/HorizontalTablesAppDelegate_iPad.h; sourceTree = "<group>"; };
 		7569F96014178271005CDC42 /* HorizontalTablesAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HorizontalTablesAppDelegate_iPad.m; path = iPad/HorizontalTablesAppDelegate_iPad.m; sourceTree = "<group>"; };
 		7569F96314178271005CDC42 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		757CE3C2142B74AC006606F4 /* ArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleCell.h; sourceTree = "<group>"; };
+		757CE3C3142B74AC006606F4 /* ArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleCell.m; sourceTree = "<group>"; };
+		757CE3C6142B77D2006606F4 /* ArticleCell_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleCell_iPhone.h; sourceTree = "<group>"; };
+		757CE3C7142B77D2006606F4 /* ArticleCell_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleCell_iPhone.m; sourceTree = "<group>"; };
+		757CE3C9142B7820006606F4 /* ArticleCell_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleCell_iPad.h; sourceTree = "<group>"; };
+		757CE3CA142B7820006606F4 /* ArticleCell_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleCell_iPad.m; sourceTree = "<group>"; };
+		75CC7D88142B8E1400210942 /* ArticleTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleTitleLabel.h; sourceTree = "<group>"; };
+		75CC7D89142B8E1400210942 /* ArticleTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleTitleLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +410,10 @@
 			children = (
 				755FFD861418C26300BCFE76 /* HorizontalTableCell.h */,
 				755FFD871418C26300BCFE76 /* HorizontalTableCell.m */,
+				757CE3C2142B74AC006606F4 /* ArticleCell.h */,
+				757CE3C3142B74AC006606F4 /* ArticleCell.m */,
+				75CC7D88142B8E1400210942 /* ArticleTitleLabel.h */,
+				75CC7D89142B8E1400210942 /* ArticleTitleLabel.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -415,6 +431,8 @@
 			children = (
 				755FFD8D1418C6E000BCFE76 /* HorizontalTableCell_iPhone.h */,
 				755FFD8E1418C6E000BCFE76 /* HorizontalTableCell_iPhone.m */,
+				757CE3C6142B77D2006606F4 /* ArticleCell_iPhone.h */,
+				757CE3C7142B77D2006606F4 /* ArticleCell_iPhone.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -422,6 +440,8 @@
 		755FFD8C1418C6A200BCFE76 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				757CE3C9142B7820006606F4 /* ArticleCell_iPad.h */,
+				757CE3CA142B7820006606F4 /* ArticleCell_iPad.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -532,6 +552,7 @@
 		7569F93814178270005CDC42 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = arconsis;
 			};
 			buildConfigurationList = 7569F93B14178270005CDC42 /* Build configuration list for PBXProject "HorizontalTables" */;
@@ -654,6 +675,10 @@
 				755FFCEA1418A99100BCFE76 /* ArticleListViewController_iPad.m in Sources */,
 				755FFD881418C26300BCFE76 /* HorizontalTableCell.m in Sources */,
 				755FFD8F1418C6E000BCFE76 /* HorizontalTableCell_iPhone.m in Sources */,
+				757CE3C4142B74AC006606F4 /* ArticleCell.m in Sources */,
+				757CE3C8142B77D2006606F4 /* ArticleCell_iPhone.m in Sources */,
+				757CE3CB142B7820006606F4 /* ArticleCell_iPad.m in Sources */,
+				75CC7D8A142B8E1400210942 /* ArticleTitleLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

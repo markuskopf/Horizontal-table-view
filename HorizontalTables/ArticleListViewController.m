@@ -51,6 +51,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    return 1;
+    /*
     NSSortDescriptor* sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:nil ascending:YES selector:@selector(localizedCompare:)];
     NSArray* sortedCategories = [self.articleDictionary.allKeys sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
     
@@ -59,6 +61,7 @@
     NSArray *currentCategory = [self.articleDictionary objectForKey:categoryName];
     
     return [currentCategory count];
+     */
 }
 
 
