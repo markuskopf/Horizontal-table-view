@@ -8,6 +8,9 @@
 
 #import "HorizontalTablesAppDelegate.h"
 
+
+// add category and overide the drawRect method
+// set an empty titleView because we don't need a title for this sample
 @implementation UINavigationBar (UINavigationBarCustomDraw)
 
 - (void)drawRect:(CGRect)rect

@@ -1,17 +1,17 @@
 //
-//  HorizontalTableCell_iPhone.m
+//  HorizontalTableCell_iPad.m
 //  HorizontalTables
 //
-//  Created by Markus Kopf on 9/8/11.
+//  Created by Markus Kopf on 9/25/11.
 //  Copyright 2011 arconsis. All rights reserved.
 //
 
-#import "HorizontalTableCell_iPhone.h"
+#import "HorizontalTableCell_iPad.h"
 #import "ControlVariables.h"
 #import "ArticleCell_iPhone.h"
 #import "ArticleTitleLabel.h"
 
-@implementation HorizontalTableCell_iPhone
+@implementation HorizontalTableCell_iPad
 
 - (id)initWithFrame:(CGRect)frame
 {

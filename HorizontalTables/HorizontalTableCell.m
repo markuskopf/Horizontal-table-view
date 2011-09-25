@@ -15,11 +15,17 @@
 
 #pragma mark - Table View Data Source
 
+- (NSString *) reuseIdentifier 
+{
+    return @"HorizontalCell";
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {    
     return [self.articles count];
 }
 
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"ArticleCell";
@@ -37,6 +43,7 @@
     
     return cell;
 }
+ */
 
 #pragma mark - Memory Management
 

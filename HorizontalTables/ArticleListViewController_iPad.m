@@ -7,12 +7,19 @@
 //
 
 #import "ArticleListViewController_iPad.h"
+#import "HorizontalTableCell_iPhone.h"
+#import "ControlVariables.h"
 
 #define kHeadlineSectionHeight  34
 #define kRegularSectionHeight   24
 
 @implementation ArticleListViewController_iPad
 
+- (void)awakeFromNib
+{
+    [self.tableView setBackgroundColor:kVerticalTableBackgroundColor];
+    self.tableView.rowHeight = kCellHeight + (kRowVerticalPadding * 0.5) + ((kRowVerticalPadding * 0.5) * 0.5);
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -71,13 +78,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"HorizontalCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    HorizontalTableCell_iPhone *cell = (HorizontalTableCell_iPhone *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    if (cell == nil) 
+    if (cell == nil)
     {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[HorizontalTableCell_iPhone alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, tableView.frame.size.height)] autorelease];
     }
     
     NSSortDescriptor* sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:nil ascending:YES selector:@selector(localizedCompare:)];
@@ -87,10 +94,7 @@
     
     NSArray *currentCategory = [self.articleDictionary objectForKey:categoryName];
     
-    NSDictionary *currentArticle = [currentCategory objectAtIndex:indexPath.row];
-    
-    cell.textLabel.text = [currentArticle objectForKey:@"Title"];
-    cell.imageView.image = [UIImage imageNamed:[currentArticle objectForKey:@"ImageName"]];
+    cell.articles = currentCategory;
     
     return cell;
 }

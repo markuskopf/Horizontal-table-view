@@ -101,6 +101,7 @@
 		757CE3C4142B74AC006606F4 /* ArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 757CE3C3142B74AC006606F4 /* ArticleCell.m */; };
 		757CE3C8142B77D2006606F4 /* ArticleCell_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 757CE3C7142B77D2006606F4 /* ArticleCell_iPhone.m */; };
 		757CE3CB142B7820006606F4 /* ArticleCell_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 757CE3CA142B7820006606F4 /* ArticleCell_iPad.m */; };
+		75C88579142F77E90027284F /* HorizontalTableCell_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C88578142F77E90027284F /* HorizontalTableCell_iPad.m */; };
 		75CC7D8A142B8E1400210942 /* ArticleTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CC7D89142B8E1400210942 /* ArticleTitleLabel.m */; };
 /* End PBXBuildFile section */
 
@@ -214,6 +215,8 @@
 		757CE3C7142B77D2006606F4 /* ArticleCell_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleCell_iPhone.m; sourceTree = "<group>"; };
 		757CE3C9142B7820006606F4 /* ArticleCell_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleCell_iPad.h; sourceTree = "<group>"; };
 		757CE3CA142B7820006606F4 /* ArticleCell_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleCell_iPad.m; sourceTree = "<group>"; };
+		75C88577142F77E90027284F /* HorizontalTableCell_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalTableCell_iPad.h; sourceTree = "<group>"; };
+		75C88578142F77E90027284F /* HorizontalTableCell_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalTableCell_iPad.m; sourceTree = "<group>"; };
 		75CC7D88142B8E1400210942 /* ArticleTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleTitleLabel.h; sourceTree = "<group>"; };
 		75CC7D89142B8E1400210942 /* ArticleTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleTitleLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -442,6 +445,8 @@
 			children = (
 				757CE3C9142B7820006606F4 /* ArticleCell_iPad.h */,
 				757CE3CA142B7820006606F4 /* ArticleCell_iPad.m */,
+				75C88577142F77E90027284F /* HorizontalTableCell_iPad.h */,
+				75C88578142F77E90027284F /* HorizontalTableCell_iPad.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -679,6 +684,7 @@
 				757CE3C8142B77D2006606F4 /* ArticleCell_iPhone.m in Sources */,
 				757CE3CB142B7820006606F4 /* ArticleCell_iPad.m in Sources */,
 				75CC7D8A142B8E1400210942 /* ArticleTitleLabel.m in Sources */,
+				75C88579142F77E90027284F /* HorizontalTableCell_iPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
