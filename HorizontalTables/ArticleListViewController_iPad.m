@@ -7,7 +7,7 @@
 //
 
 #import "ArticleListViewController_iPad.h"
-#import "HorizontalTableCell_iPhone.h"
+#import "HorizontalTableCell_iPad.h"
 #import "ControlVariables.h"
 
 #define kHeadlineSectionHeight  34
@@ -18,7 +18,7 @@
 - (void)awakeFromNib
 {
     [self.tableView setBackgroundColor:kVerticalTableBackgroundColor];
-    self.tableView.rowHeight = kCellHeight + (kRowVerticalPadding * 0.5) + ((kRowVerticalPadding * 0.5) * 0.5);
+    self.tableView.rowHeight = kIPadCellHeight + (kRowVerticalPadding * 0.5) + ((kRowVerticalPadding * 0.5) * 0.5);
 }
 
 - (void)didReceiveMemoryWarning
@@ -80,11 +80,11 @@
 {
     static NSString *CellIdentifier = @"HorizontalCell";
     
-    HorizontalTableCell_iPhone *cell = (HorizontalTableCell_iPhone *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    HorizontalTableCell_iPad *cell = (HorizontalTableCell_iPad *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil)
     {
-        cell = [[[HorizontalTableCell_iPhone alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, tableView.frame.size.height)] autorelease];
+        cell = [[[HorizontalTableCell_iPad alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, tableView.frame.size.height)] autorelease];
     }
     
     NSSortDescriptor* sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:nil ascending:YES selector:@selector(localizedCompare:)];

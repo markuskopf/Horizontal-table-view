@@ -16,7 +16,7 @@
 {
     [super initWithFrame:frame];
     
-    self.thumbnail = [[[UIImageView alloc] initWithFrame:CGRectMake(kArticleCellHorizontalInnerPadding, kArticleCellVerticalInnerPadding, kCellWidth - kArticleCellHorizontalInnerPadding * 2, kCellHeight - kArticleCellVerticalInnerPadding * 2)] autorelease];
+    self.thumbnail = [[[UIImageView alloc] initWithFrame:CGRectMake(kArticleCellHorizontalInnerPadding, kArticleCellVerticalInnerPadding, kIPadCellWidth - kArticleCellHorizontalInnerPadding * 2, kIPadCellHeight - kArticleCellVerticalInnerPadding * 2)] autorelease];
     self.thumbnail.opaque = YES;
     
     [self.contentView addSubview:self.thumbnail];

@@ -8,7 +8,7 @@
 
 #import "HorizontalTableCell_iPad.h"
 #import "ControlVariables.h"
-#import "ArticleCell_iPhone.h"
+#import "ArticleCell_iPad.h"
 #import "ArticleTitleLabel.h"
 
 @implementation HorizontalTableCell_iPad
@@ -17,13 +17,13 @@
 {
     if ((self = [super initWithFrame:frame]))
     {
-        self.horizontalTableView = [[[UITableView alloc] initWithFrame:CGRectMake(0, 0, kCellHeight, kTableLength)] autorelease];
+        self.horizontalTableView = [[[UITableView alloc] initWithFrame:CGRectMake(0, 0, kIPadCellHeight, kIPadTableLength)] autorelease];
         self.horizontalTableView.showsVerticalScrollIndicator = NO;
         self.horizontalTableView.showsHorizontalScrollIndicator = NO;
         self.horizontalTableView.transform = CGAffineTransformMakeRotation(-M_PI * 0.5);
-        [self.horizontalTableView setFrame:CGRectMake(kRowHorizontalPadding * 0.5, kRowVerticalPadding * 0.5, kTableLength - kRowHorizontalPadding, kCellHeight)];
+        [self.horizontalTableView setFrame:CGRectMake(kRowHorizontalPadding * 0.5, kRowVerticalPadding * 0.5, kIPadTableLength - kRowHorizontalPadding, kIPadCellHeight)];
         
-        self.horizontalTableView.rowHeight = kCellWidth;
+        self.horizontalTableView.rowHeight = kIPadCellWidth;
         self.horizontalTableView.backgroundColor = kHorizontalTableBackgroundColor;
         
         self.horizontalTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
@@ -41,11 +41,11 @@
 {
     static NSString *CellIdentifier = @"ArticleCell";
     
-    ArticleCell_iPhone *cell = (ArticleCell_iPhone *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    ArticleCell_iPad *cell = (ArticleCell_iPad *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) 
     {
-        cell = [[[ArticleCell_iPhone alloc] initWithFrame:CGRectMake(0, 0, kCellWidth, kCellHeight)] autorelease];
+        cell = [[[ArticleCell_iPad alloc] initWithFrame:CGRectMake(0, 0, kIPadCellWidth, kIPadCellHeight)] autorelease];
     }
     
 	NSDictionary *currentArticle = [self.articles objectAtIndex:indexPath.row];
